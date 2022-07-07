@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-<<<<<<< HEAD
   eslint: {
     dirs: ['src'],
   },
@@ -13,9 +12,3 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
-=======
-  reactStrictMode: true,
-}
-
-module.exports = nextConfig
->>>>>>> 15e509f (Initial commit from Create Next App)
