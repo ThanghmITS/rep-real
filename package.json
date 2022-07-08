@@ -1,5 +1,9 @@
 {
   "name": "ec-airwater-client",
+  "author": {
+    "name": "ThangHM",
+    "email": "thanghm@its-global.vn"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,12 +13,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.3",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "axios": "^0.27.2",
     "next": "12.2.0",
+    "primeicons": "^5.0.0",
+    "primereact": "^8.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-intl": "^6.0.5"
+    "react-intl": "^6.0.5",
+    "react-redux": "^8.0.2"
   },
   "devDependencies": {
     "@types/node": "18.0.3",
