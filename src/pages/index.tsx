@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useIntl } from 'react-intl';
-import styles from '@/styles/Home.module.css';
+import styles from '@/assets/styles/Home.module.css';
 
 const Home: NextPage = () => {
   const { locales } = useRouter();

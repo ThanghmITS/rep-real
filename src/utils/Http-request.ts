@@ -34,24 +34,6 @@ axiosClient.interceptors.response.use(
           removeAll();
           return location('/login');
         }
-        // const refreshToken = getItem(REFRESH_TOKEN);
-        // if (!refreshToken) {
-        //   removeAll();
-        //   return location('/login');
-        // }
-        // try {
-        //   originalConfig.retry = true;
-        //   // eslint-disable-next-line
-        //   const res: any = await axiosClient.post(`auth/refresh-tokens`, {
-        //     refreshToken: getItem(REFRESH_TOKEN),
-        //   });
-        //   setItem(ACCESS_TOKEN, res.tokens.access.token);
-        //   setItem(REFRESH_TOKEN, res.tokens.refresh.token);
-        //   setItem(USER, JSON.stringify(res.user));
-        //   return axiosClient(originalConfig);
-        // } catch (_error) {
-        //   return Promise.reject(_error);
-        // }
       }
     }
 
