@@ -7,6 +7,7 @@ import en from '@/languages/en-US.json';
 import vi from '@/languages/vi.json';
 import { Provider } from 'react-redux';
 import { store } from '@/store/store';
+import 'antd/dist/antd.css';
 
 const messages = {
   en,

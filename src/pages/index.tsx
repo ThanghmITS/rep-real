@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={styles.main_local}>
         <header>
           <div className={styles.languages}>
             {[...(locales as Array<string>)].sort().map((locale) => (
