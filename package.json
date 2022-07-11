@@ -10,7 +10,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:es": "eslint . --ext ts,tsx,js"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",

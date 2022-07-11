@@ -1,4 +1,3 @@
-
 import { ACCESS_TOKEN } from '@/constants/Storage';
 import storage from '@/utils/storage';
 import axios from 'axios';
@@ -19,7 +18,7 @@ axiosClient.interceptors.request.use(
   },
   function (error) {
     return Promise.reject(error);
-  }
+  },
 );
 
 axiosClient.interceptors.response.use(
@@ -29,7 +28,7 @@ axiosClient.interceptors.response.use(
   async function (error) {
     const originalConfig = error.config;
     if (originalConfig.url !== '/login' && error.response) {
-      if (error.response.status === 401) {
+      if ([401, 403].includes(Number(error.response.status))) {
         if (originalConfig.retry) {
           removeAll();
           return location('/login');
@@ -41,7 +40,7 @@ axiosClient.interceptors.response.use(
       alert('Please check your internet connection and try again');
     }
     return Promise.reject(error);
-  }
+  },
 );
 
 export default axiosClient;
