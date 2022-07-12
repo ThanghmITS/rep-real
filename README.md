@@ -1,14 +1,14 @@
 This is a project written in ***React framework*** ( [Next.js])
 
-## Getting Started
+## Bắt đầu
 
-First, clone the project to your computer:
+Đầu tiên, clone code về máy
 
 ```bash
 git clone https://github.com/its-workspace/AirWater-ReactJS-ECweb.git
 ```
 
-Next step:
+Tiếp theo, install node_modules cho project
 
 ```
 npm install
@@ -16,30 +16,65 @@ or
 yarn
 ```
 
-Next step: Copy replace file `.env`
+Tiếp theo thay đổi file `.env.example` thành `.env`
 
-Next step: run the development server:
+Tiếp theo, run project lên kiểm tra
 
 ```
 npm run dev
 # or
 yarn dev
 ```
-<!--
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Rules Git
+ <strong>Quy trình task mới</strong>
+```
+git checkout develop
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+git pull
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+git checkout -b <branch mới>(Feature/mã task _ nội dung task ngắn ngọn) -> ex: git checkout -b feature/EC201_FunctionLogin
 
-## Learn More
+- Làm xong task
+git status
 
-To learn more about Next.js, take a look at the following resources:
+git add .
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+git commit -m"(nội dung task)"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
- -->
+git status
+
+git pull origin develop
+
+git push (copy nội dung ở terminal gợi ý)
+
+```
+- Push xong lên github tạo Pull Request (PR)
+ + Assign người review
+ + Tạo xong copy URL PR gửi lên Slack task tên người Assign vào
+
+
+
+ <strong>Quy trình fix conflict</strong>
+```
+
+git pull origin develop
+```
+- bị conflict thì copy <<<<< vào vscode search all để tìm những file bị conflict
+- Sử lý xong
+```
+git add .
+
+git commit -m"(nội dung task)"
+
+git status
+
+git pull origin develop
+
+git push
+
+```
+- Push xong lên github tạo Pull Request (PR)
+ + Assign người review
+ + Tạo xong copy URL PR gửi lên Slack task tên người Assign vào
+

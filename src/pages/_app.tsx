@@ -8,6 +8,7 @@ import vi from '@/languages/vi.json';
 import { Provider } from 'react-redux';
 import { store } from '@/store/store';
 import 'antd/dist/antd.css';
+import { LayoutMain } from '@/components/Layout';
 
 const messages = {
   en,
@@ -27,7 +28,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <IntlProvider locale={locale as string} messages={messages[locale as keyof typeof messages]}>
       <Provider store={store}>
-        <Component {...pageProps} dir={getDirection(locale)} />
+        <LayoutMain>
+          <Component {...pageProps} dir={getDirection(locale)} />
+        </LayoutMain>
       </Provider>
     </IntlProvider>
   );
