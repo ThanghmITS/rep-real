@@ -9,6 +9,7 @@ const nextConfig = {
     defaultLocale: 'en',
   },
   trailingSlash: true,
+  output: 'standalone',
 };
 
 module.exports = nextConfig;

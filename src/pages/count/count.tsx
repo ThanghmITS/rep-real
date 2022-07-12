@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
-import { decrement, increment, incrementByAmount, selectCount } from '@/pages/count/counterSlice';
+import { decrement, increment, incrementByAmount, selectCount } from '@/redux/slices/counterSlice';
 import { NextPage } from 'next';
 
 const CountPage: NextPage = () => {
